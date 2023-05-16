@@ -1,7 +1,7 @@
 <?php
 class Movie
 {
-    public $originalTtitle;
+    public $originalTitle;
     public $originalLenguage;
     public $title;
     public $genre;
@@ -11,7 +11,7 @@ class Movie
 
     function __construct($_originalTitle)
     {
-        $this->title = $_originalTitle;
+        $this->originalTitle = $_originalTitle;
     }
 
     public function printData()

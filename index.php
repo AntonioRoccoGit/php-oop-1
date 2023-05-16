@@ -13,10 +13,16 @@ Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi 
 - mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi in una cartella dedicata che possiamo chiamare Models/
 - organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati. -->
 <?php
+// import Movie class
 require_once __DIR__ . "/models/Movie.php";
 
+//create Movies
 $spiderMan = new Movie("Spider Man");
-echo ($firstMovie->printData());
-$firstMovie->setGenre(14, 10, 22);
+$forestGump = new Movie("Forset Gump");
 
-var_dump($firstMovie);
+//set Movies genres
+$spiderMan->setGenre(14, 10, 22);
+$forestGump->setGenre(34, 16, 07);
+
+
+var_dump($spiderMan, $forestGump);
